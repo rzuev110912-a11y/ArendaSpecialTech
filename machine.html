@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Карточка техники — аренда и продажа | LOGOTYPE</title>
+  <meta name="description" content="Характеристики, фото и цены аренды и продажи спецтехники. Аренда с машинистом, подача на объект от 2 часов.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="css/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="css/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="css/fonts/roboto-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- ===== Шапка ===== -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container header__top-inner">
+        <a class="logo" href="index.html" aria-label="LOGOTYPE — на главную">
+          <span class="logo__mark"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-excavator"></use></svg></span>
+          <span class="logo__text">LOGO<span>TYPE</span></span>
+        </a>
+        <p class="header__tagline">Продажа и аренда спецтехники в Москве и области</p>
+        <div class="header__socials">
+          <a class="social-link" href="https://t.me/" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+            <span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-telegram"></use></svg></span>
+            <span class="social-link__text">Telegram</span>
+          </a>
+          <a class="social-link" href="https://wa.me/70000000000" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+            <span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-whatsapp"></use></svg></span>
+            <span class="social-link__text">WhatsApp</span>
+          </a>
+        </div>
+        <div class="header__contact">
+          <a class="header__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+          <span class="header__hours">Ежедневно с 8:00 до 21:00</span>
+        </div>
+        <button class="btn btn--sm header__callback" type="button" data-modal="callback">Заказать звонок</button>
+        <a class="header__phone-icon" href="tel:+70000000000" aria-label="Позвонить: +7 (000) 000-00-00">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-phone"></use></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="header__nav" id="site-nav">
+      <div class="container">
+        <nav class="nav" aria-label="Основное меню">
+          <div class="nav__head">
+            <a class="logo" href="index.html" aria-label="LOGOTYPE — на главную">
+              <span class="logo__mark"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-excavator"></use></svg></span>
+              <span class="logo__text">LOGO<span>TYPE</span></span>
+            </a>
+            <button class="nav__close" type="button" aria-label="Закрыть меню">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-close"></use></svg>
+            </button>
+          </div>
+
+          <div class="catalog-dd">
+            <button class="btn catalog-dd__btn" type="button" aria-expanded="false" aria-controls="catalog-menu">
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-menu"></use></svg>
+              Каталог техники
+              <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-chevron-down"></use></svg>
+            </button>
+            <div class="catalog-dd__menu" id="catalog-menu">
+              <ul>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=excavators"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-excavator"></use></svg><span class="catalog-dd__name">Экскаваторы</span><span class="catalog-dd__count" data-cat-count="excavators"></span></a></li>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=cranes"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-crane"></use></svg><span class="catalog-dd__name">Автокраны</span><span class="catalog-dd__count" data-cat-count="cranes"></span></a></li>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=dump-trucks"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-dump"></use></svg><span class="catalog-dd__name">Самосвалы</span><span class="catalog-dd__count" data-cat-count="dump-trucks"></span></a></li>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=loaders"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-loader"></use></svg><span class="catalog-dd__name">Погрузчики</span><span class="catalog-dd__count" data-cat-count="loaders"></span></a></li>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=bulldozers"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-bulldozer"></use></svg><span class="catalog-dd__name">Бульдозеры</span><span class="catalog-dd__count" data-cat-count="bulldozers"></span></a></li>
+                <li><a class="catalog-dd__link" href="catalog.html?cat=manipulators"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-manipulator"></use></svg><span class="catalog-dd__name">Манипуляторы</span><span class="catalog-dd__count" data-cat-count="manipulators"></span></a></li>
+              </ul>
+              <a class="catalog-dd__all" href="catalog.html">Весь каталог <svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-arrow-long"></use></svg></a>
+            </div>
+          </div>
+
+          <ul class="nav__list">
+            <li><a class="nav__link" href="catalog.html?mode=rent">Аренда</a></li>
+            <li><a class="nav__link" href="catalog.html?mode=buy">Продажа</a></li>
+            <li><a class="nav__link" href="index.html#steps">Услуги</a></li>
+            <li><a class="nav__link" href="index.html#popular">Спецпредложения</a></li>
+            <li><a class="nav__link" href="index.html#why">О компании</a></li>
+            <li><a class="nav__link" href="index.html#contacts">Контакты</a></li>
+          </ul>
+
+          <div class="nav__extra">
+            <a class="header__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+            <span class="header__hours">Ежедневно с 8:00 до 21:00</span>
+            <div class="header__socials">
+              <a class="social-link" href="https://t.me/" target="_blank" rel="noopener"><span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-telegram"></use></svg></span>Telegram</a>
+              <a class="social-link" href="https://wa.me/70000000000" target="_blank" rel="noopener"><span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-whatsapp"></use></svg></span>WhatsApp</a>
+            </div>
+            <button class="btn btn--block" type="button" data-modal="callback">Заказать звонок</button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol id="machine-crumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог техники</a></li>
+          </ol>
+        </nav>
+        <h1 id="machine-title">Карточка техники</h1>
+      </div>
+    </section>
+
+    <section class="machine" id="machine-top" aria-label="Фото и цены">
+      <div class="container machine__grid">
+        <div class="gallery">
+          <div class="gallery__main">
+            <img id="gallery-img" alt="" width="960" height="660" fetchpriority="high" sizes="(max-width: 991px) calc(100vw - 32px), 55vw">
+            <script>
+              // Главное фото ставим прямо при разборе HTML, чтобы первый экран не ждал скриптов.
+              // Файлы фото названы по id техники: img/machines/<id>-<ширина>.webp
+              (function () {
+                var id = new URLSearchParams(location.search).get('id');
+                if (!id || !/^[a-z0-9-]+$/.test(id)) return;
+                var b = 'img/machines/' + id, img = document.getElementById('gallery-img');
+                img.srcset = b + '-480.webp 480w, ' + b + '-640.webp 640w, ' + b + '-720.webp 720w, ' + b + '-960.webp 960w';
+                img.src = b + '-960.webp';
+              })();
+            </script>
+          </div>
+          <div class="gallery__thumbs" id="gallery-thumbs"></div>
+        </div>
+        <div class="machine__info" id="machine-info"></div>
+      </div>
+    </section>
+
+    <div id="machine-root">
+      <noscript>
+        <div class="container not-found">
+          <p>Для просмотра карточки техники включите JavaScript или позвоните нам: <a href="tel:+70000000000">+7 (000) 000-00-00</a>.</p>
+        </div>
+      </noscript>
+    </div>
+  </main>
+
+  <!-- ===== Подвал ===== -->
+  <footer class="footer">
+    <div class="hazard" aria-hidden="true"></div>
+    <div class="container footer__grid">
+      <div class="footer__col--brand">
+        <div>
+          <a class="logo" href="index.html" aria-label="LOGOTYPE — на главную">
+            <span class="logo__mark"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-excavator"></use></svg></span>
+            <span class="logo__text">LOGO<span>TYPE</span></span>
+          </a>
+          <p class="footer__about">Продажа и аренда спецтехники с 2011 года. Собственный парк из 120+ единиц, работаем по Москве и области.</p>
+        </div>
+        <div class="footer__socials">
+          <a class="social-link" href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram"><span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-telegram"></use></svg></span></a>
+          <a class="social-link" href="https://wa.me/70000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="social-link__icon"><svg class="icon" aria-hidden="true"><use href="img/icons.svg#i-whatsapp"></use></svg></span></a>
+        </div>
+      </div>
+      <nav aria-label="Каталог в подвале">
+        <h2 class="footer__title">Каталог</h2>
+        <ul class="footer__links">
+          <li><a href="catalog.html?cat=excavators">Экскаваторы</a></li>
+          <li><a href="catalog.html?cat=cranes">Автокраны</a></li>
+          <li><a href="catalog.html?cat=dump-trucks">Самосвалы</a></li>
+          <li><a href="catalog.html?cat=loaders">Погрузчики</a></li>
+          <li><a href="catalog.html?cat=bulldozers">Бульдозеры</a></li>
+          <li><a href="catalog.html?cat=manipulators">Манипуляторы</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Компания">
+        <h2 class="footer__title">Компания</h2>
+        <ul class="footer__links">
+          <li><a href="catalog.html?mode=rent">Аренда техники</a></li>
+          <li><a href="catalog.html?mode=buy">Продажа техники</a></li>
+          <li><a href="index.html#calc">Калькулятор аренды</a></li>
+          <li><a href="index.html#steps">Как мы работаем</a></li>
+          <li><a href="index.html#objects">Наши объекты</a></li>
+          <li><a href="index.html#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer__title">Контакты</h2>
+        <a class="footer__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <ul class="footer__contacts">
+          <li><a href="mailto:info@example.com">info@example.com</a></li>
+          <li>Химки, ул. Промышленная, 12</li>
+          <li>Ежедневно 8:00–21:00</li>
+        </ul>
+        <button class="btn btn--sm" type="button" data-modal="callback">Заказать звонок</button>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> LOGOTYPE. Все права защищены.</p>
+      <a href="#" data-policy>Политика конфиденциальности</a>
+      <p>Информация на сайте не является публичной офертой</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js" defer fetchpriority="high"></script>
+  <script src="js/common.js" defer fetchpriority="high"></script>
+  <script src="js/machine.js" defer fetchpriority="high"></script>
+</body>
+</html>
